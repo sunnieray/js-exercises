@@ -18,28 +18,52 @@ if (favNumber != null) {
 // 4 console.log a variable tht holds an array of the alphabet
 function remove(array, element) {
     const index = array.indexOf(element);
-    array.splice(index, 1);
+    array.splice(index, 1);}
 
-var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 alphabet.toString();
-remove(alphabet, "a", "e", "i", "o", "u")
+remove(alphabet, "a")
+remove(alphabet, "e")
+remove(alphabet, "i")
+remove(alphabet, "o")
+remove(alphabet, "u")
+remove(alphabet, "y")
 alphabet.toString();
 console.log(alphabet)
-}
-
 
 // 4a use "slice" to remove the vowels, including "y"
 
-    // 4b console.log the remaining array of consonants, label the console log with a string
-    // 4c  console.log the length of this array, label it with a string
+// 4b console.log the remaining array of consonants, label the console log with a string
+// 4c  console.log the length of this array, label it with a string
+console.log(`${alphabet.length} is the length og this array`)
 
-// 5 create a variable of an array of numbers 1-5
+//???????// 5 create a variable of an array of numbers 1-5
+let numbers = [1, 2, 3, 4, 5]
     // 5a create a "const" which uses "map" to multiply each number with itself
+const multiply = numbers.map()
     // 5b console.log the results of the mapped array, label the console log with string
     // 5c use the "forEach" method on the mapped array to console log the remainder when divided by 2
 
 // 6 create an variable holding an object of each person with the properties "name, age, jobTitle, laptopType, isStudent" the data can/is fictional
+var person = [
+   {name: Sunnie,
+    age: 22,
+    job: Lyft,
+    laptop: MacBook,
+    isStudent: true},
+    {name: zack,
+    age: 27,
+    job: Lead,
+    laptop: MacBook,
+    isStudent: false},
+    {name: Sunnie,
+    age: 25,
+    job: microsoft,
+    laptop: windows,
+    isStudent: true}
+]
     // 6a create a for loop to dynamically create a sentence describing each "person"
+for person 
     // 6b inject these sentences in "p" elements in the html div
 
 // 7 create two "const" variables of strings. console log the combined result using "concat"
