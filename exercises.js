@@ -1,17 +1,35 @@
 // 1 create an alert that says "hello world"
-
+alert("Hello! I am an alert box!!");
 // 2 create a prompt which asks for your favorite number
-    // 2a display the response in the console with "user's favorite nunber is: (display input)"
+var favNumber = prompt("What's your favorite number?");
+
+// 2a display the response in the console with "user's favorite nunber is: (display input)"
+if (favNumber != null) {
+    console.log(`${favNumber} is your favorite number`);
+  }
 
 // 3 create a variable which selects the h1
     // 3a add inner text to the header selector
-    var header = document.querySelector("h1");
-    header.innerHTML = "hi heading"
+    var grabHeader = document.querySelector("h1");
+    grabHeader.innerHTML = "This is my Header"
     // 3b add a border around the h1 that is 1px, solid, and black. use "cssText" to add this
-        header.style.cssText = "border: 1px solid black";
+    grabHeader.style.cssText = "border: 1px solid black";
 
 // 4 console.log a variable tht holds an array of the alphabet
-    // 4a use "slice" to remove the vowels, including "y"
+function remove(array, element) {
+    const index = array.indexOf(element);
+    array.splice(index, 1);
+
+var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+alphabet.toString();
+remove(alphabet, "a", "e", "i", "o", "u")
+alphabet.toString();
+console.log(alphabet)
+}
+
+
+// 4a use "slice" to remove the vowels, including "y"
+
     // 4b console.log the remaining array of consonants, label the console log with a string
     // 4c  console.log the length of this array, label it with a string
 
